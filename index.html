@@ -1227,7 +1227,6 @@ function decreaseUnpaidMonths(clientId) {
     });
     
     if (expiringClients.length > 0) {
-        let message = 'تنبيه: لديك اشتراكات ';
         
         const debtCount = expiringClients.filter(c => 
             getRenewalStatus(c.renewalDate, c.unpaidMonths || 0).status === 'debt'
