@@ -629,6 +629,11 @@
     background-color: var(--warning-color);
     color: white;
 }
+.phone-number {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
     </style>
 </head>
 <body>
@@ -880,8 +885,9 @@
             <div class="invoice-footer">
                 <p><i class="fas fa-heart"></i>By wissam mohammad</p>
                 <p><i class="fas fa-phone"></i> للاستفسار يرجى التواصل عبر:</p>
-                <p>📞 +961 70 061 766</p>
-                <p>📞 +961 XX XXX XXX</p>
+                <p class="phone-number">📞 +961 70 061 766</p>
+                <p class="phone-number">📞 +961 XX XXX XXX</p>
+                
                 
                 <button class="btn btn-primary no-print" onclick="window.print()">
                     <i class="fas fa-print"></i> طباعة الفاتورة
